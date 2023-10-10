@@ -130,3 +130,22 @@ a:hover::after{
 }
 
 
+/* Slider/carousel */
+
+*{
+    padding:8px;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.carousel-container{
+    width: 60px;
+    margin:auto;
+    overflow: hidden;
+}
+
+.carousel-slider{
+    display: flex;
+    width:100px;
+    height: 500px;
+}

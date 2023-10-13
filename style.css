@@ -1,4 +1,7 @@
 
+
+  @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+
 /* This code is basically centering the header at the top correctly */
 *{
     margin:0; padding: 0;
@@ -29,7 +32,7 @@ header{
 
 header .navbar-container{
     padding: 0 1.5rem;
-
+    
 }
 
 
@@ -132,20 +135,37 @@ a:hover::after{
 
 /* Slider/carousel */
 
-*{
-    padding:8px;
-    margin:0;
+.primary-btn{
     box-sizing: border-box;
+    color:black;
+    border: 2px solid black;
+    
 }
 
-.carousel-container{
-    width: 60px;
-    margin:auto;
-    overflow: hidden;
+.primary-btn:hover{
+    background-color:#F21B2D;
 }
 
-.carousel-slider{
-    display: flex;
-    width:100px;
-    height: 500px;
+
+.slider :where(.Image, .ob-cover){
+    position: relative;
 }
+
+.slider .ob-cover{
+    height: 430px;
+}
+
+.ob-cover img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+

@@ -172,7 +172,7 @@ img{
     left:0;
     background-color:var(--body-color);
     z-index: var(--z-fixed);
-    transition: box-shadow .4s;
+    transition: box-shadow .4s; /* ???, Not working **/
 }
 
 .nav{
@@ -215,14 +215,14 @@ img{
 @media screen and (max-width: 1150px) {
     .Nav-Menu{
         position: fixed;
-        top: 0;
+        top: -100%;
         left:0;
         background-color: hsla(0,0%,0%,.75);
         width: 100%;
         padding-block: 1.8rem 5rem;
         text-align: center;
         backdrop-filter:blur(0px);
-        transition: top .4;
+        transition: top .4s;
     }
 }
 .Nav-Title,
@@ -238,13 +238,74 @@ img{
     margin-bottom: 3.5rem;
 }
 
-.Nav-Nam{
+.Nav-Name{
     position:relative;
     width:max-content;
+    margin: 0 auto 3rem;
+    font-size: var(--h2-font-size);
+}
+
+.Nav-Name::after,
+.Nav-Name::before{
+    content: '';
+    width: 40px;
+    height: 1px;
+    background-color: var(--text-color-light);
+    position: absolute;
+    top: 50%;
+    left: -4rem;
+}
+
+.Nav-Name::before{
+    left: initial;
+    right: -4rem;
+}
+
+.Nav-List{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+}
+
+.Nav-Link{
+    position: relative;
+    color: var(--text-color-light);
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semi-bold);
+    transition: color .3s;
+}
+
+.Nav-Link::after{
+    content: '';
+    width: 25%; /* 0 */
+    height: 2px;
+    background-color: var(--white-color);
+    position: absolute;
+    left: 0;
+    bottom: -.5rem;
+    transition: width .3s;
+}
+
+.Nav-Link:hover{
+    color: var(--white-color);
+}
+
+.Nav-Link:hover::after{
+    width: 25%;
+}
+
+.Nav-Close{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 1rem;
+    right: 1.5rem;
+    cursor: pointer;
 }
 
 /* Show menu */
-
+.Show-Menu{
+    top:0;
+}
 
 /* Shadow header */
 

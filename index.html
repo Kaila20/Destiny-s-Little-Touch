@@ -9,62 +9,124 @@
     
 </head>
 <body>
-    <!-- Header menu-->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="Nav-Logo">
-                <span class="Nav-Logo-Circle">D</span> <!--Circle icons (Might reuse/ Delete later)-->
-                <span class="Nav-Logo-Name">Destiny Little Touch</span>
-            </a>
-            <!--Navigation menu-->
-            <div class="Nav-Menu" id="Nav-Menu">
-                <span class="Nav-Title">Menu</span>
-           
-                <h3 class="Nav-Name">Destiny Townsend</h3>
+    
+    <!--Header-->
+<header class="sticky">
+    
+    <ul class="NavList">
+        <li><a href="#Home"> Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href ="#Products">Products</a></li>
+        <li><a href = "#Service">Service</a></li>
+        <li><a href = "#Contact">Contact</a></li>
+    </ul>
 
-                <ul class="Nav-List">
-                    <li class="Nav-Item">
-                        <a href="#Home" class="Nav-Link">Home</a>
-                    </li>
+</header>
+   
 
-                    <li class="Nav-Item">
-                        <a href="#About" class="Nav-Link">About Me</a>
-                    </li>
+    <!--Home section-->
+    <section class="home" id="home">
+        <div class="Home-Body-Text">
+            <h3>Hello, I'm</h3>
+            <h1> Destiny Townsend</h1>
+            <h5> I own a black boutique <span> From Cincinnati, Ohio</span></h5>
+            <p>Hello Ladies my name is Destiny! I am a black owned boutique and looking forward to meeting you all!</p>
+       
+            <div class = "social-media">
+            <a href="#"><i class="fa-brands fa-facebook" style="color: #000000;"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram" style="color: #000000;"></i></i></a>
+        </div>
+        <a href="#" class="btn">About Me</a>
+    </div>
 
-                    <li class="Nav-Item">
-                        <a href="#Projects" class="Nav-Link">Products</a>
-                    </li>
+    <div class="home-img">
+        <img src="Images/Shoulder_Bag/Ellipse 22.jpg">
+    </div>
+    </section>
 
-                    <li class="Nav-Item">
-                        <a href="#Contact" class="Nav-Link">Contact Me</a>
-                    </li>
-                </ul>
+    <!--About section-->
+    <section class = "about" id="about">
+        <div class="about-img">
+            <img src = "Images/Ellipse 27.jpg">
+        </div>
 
-                <!-- Close Button (This is for the nav)-->
-                <div class="Nav-Close" id="Nav-Close">
-                    <i class="fa-solid fa-x"></i> <!-- Font awesome Url https://fontawesome.com/icons/x?f=classic&s=solid -->
-                </div>
+        <div class="about-text">
+            <h3>Black owned business</h3>
+            <h2>Destiny’s Little Touch</h2>
+            <p>Hey there! I'm Destiny Townsend, the proud owner of 'Destiny's Little Touch,' a vibrant, black-owned boutique. Purses are our standout product in a collection that embodies my lifelong dream. Crafting this boutique has been a journey of passion and dedication. Join me in experiencing a touch of destiny through our curated, stylish offerings.</p>
+            <a href="#" class="btn">Products</a>
+        </div>
+    </section>
+
+    <!--Products section-->
+    <section class="products" id="products">
+        <div class="heading">
+            <h3>Products</h3>
+            <h2>My amazing Products</h2>
+            <p>Explore our remarkable product selection<br>
+                To see more, Visit our facebook page</p>
+        </div>
+        <!--1-->
+        <div class = "product-content">
+            <div class="columns">
+                <img src="Images/Cross_bag/brown_crossbag_purse.jpg">
+            <div class="layer">
+                <h3>Brown CrossBag</h3>
+                <h5>A brown crossbody bag is a small, multipurpose handbag with a long strap that is perfect for daily usage.</h5>
+            </div>
             </div>
 
-            <div class="nav_Button">
-                <!-- Toggle Button, (Hamburger menu)-->
-                <div class="nav_Toggle" id="nav-Toogle2">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-            </div>
-        </nav>
-    </header>
+        <!--2-->
+        <div class="columns">
+            <img src="Images/Cross_bag/white_crossbag_purse_resize.jpg">
+        <div class="layer">
+            <h3>White CrossBag</h3>
+            <h5>A compact white crossbody bag with a long strap—a stylish and hands-free way to carry essentials.</h5>
+        </div>
+        </div>
 
-    <!-- Main-->
-    <main class="main">
-    </main>
+        <!--3-->
+        <div class="columns">
+            <img src="Images/Shoulder_Bag/brown_shoulderbag_purse_Resize.jpg">
+        <div class="layer">
+            <h3>Brown CrossBag</h3>
+            <h5>A brown crossbody bag is a small, multipurpose handbag with a long strap that is perfect for daily usage.</h5>
+        </div>
+        </div>
 
-    <!--footer-->
+        <!--4-->
+        <div class="columns">
+            <img src="Images/Shoulder_Bag/green_shoulderbag_purse_resize.jpg">
+        <div class="layer">
+            <h3>Brown CrossBag</h3>
+            <h5>A brown crossbody bag is a small, multipurpose handbag with a long strap that is perfect for daily usage.</h5>
+        </div>
+        </div>
 
-    <footer class="footer">
+        <!--5-->
+        <div class="columns">
+            <img src="Images/Rectangle 101.jpg">
+        <div class="layer">
+            <h3>Brown CrossBag</h3>
+            <h5>A brown crossbody bag is a small, multipurpose handbag with a long strap that is perfect for daily usage.</h5>
+        </div>
+        </div>
 
-    </footer>
+        <!--6-->
+        <div class="columns">
+            <img src="Images/Rectangle 102.jpg">
+        <div class="layer">
+            <h3>Brown CrossBag</h3>
+            <h5>A brown crossbody bag is a small, multipurpose handbag with a long strap that is perfect for daily usage.</h5>
+        </div>
+        </div>
 
-    <script src = "Style.js"></script>
+
+        </div>
+    </section>
+
+
+<!--Javascript-->
+    <script src = "Script.js"></script>
 </body>
 </html>

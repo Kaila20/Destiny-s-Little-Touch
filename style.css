@@ -319,7 +319,7 @@ header.sticky{
     background: linear-gradient(rgba(0,0,0,0.5)0%, #191919);
 }
 
-/* h3 layer hover for the title */
+/* h3 layer hover for the title of product page */
 .layer h3{
     position: absolute;
     width: 100%;
@@ -337,20 +337,87 @@ header.sticky{
     opacity: 1;
 }
 
-/* h5 layer for the title */
+/* h5 layer for the title of product page */
 .layer h5{
     position: absolute;
     width: 100%;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 400;
     color:var(--bg-color);
     top:50%;
-    left:-1%;
+    left:0%;
     transform: translateY(-50%);
     opacity: 0;
     transition: all .40s;
 }
+/* Hover when clicker is on product */
 .layer:hover h5{
     bottom: 48%;
     opacity: 1;
 }
+.service-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+    margin-top: 5rem;
+    text-align: center;
+    cursor: pointer;
+}
+.row{
+    background: #ffffff;
+    box-shadow: 18px 0px 87px 0px rgb(10 15 70 / 7%);
+    border-radius: 12px;
+    padding: 45px 45px 45px 45px;
+    transition: ease .45s;
+    cursor: pointer;
+}
+
+/*Service section red */
+.s img{
+    height: 65px;
+    width: 65px;
+    background: #f75124;
+    padding: 15px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Service section 1 */
+.s.service-one img{
+    background: #99DCEF;
+}
+
+/* Service section 2 */
+.s.service-two img{
+    background: #99DCEF;
+}
+
+/* Service section 3 */
+.s.service-three img{
+    background: #99DCEF;
+}
+
+/* Service section 4 */
+.s.service-four img{
+    background: #99DCEF;
+}
+.row h3{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+.row h5{
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 19px;
+}
+.row p{
+    font-size: var(--p-font);
+    color: var(--second-color);
+    line-height: 28px;
+}
+.row:hover{
+    transform: scale(1.1);
+}
+
